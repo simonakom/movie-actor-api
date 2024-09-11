@@ -24,6 +24,7 @@ Before you begin, ensure you have the following installed on your machine:
 
 - Node.js: [Download here](https://nodejs.org/).
 - npm (Node Package Manager): comes with Node.js installation.
+- Postman: [Download here](https://www.postman.com/downloads/).
 
 ## Set up
 
@@ -46,7 +47,13 @@ Before you begin, ensure you have the following installed on your machine:
 - Run the API server locally `node app.js` or `npm run dev` (nodemon).
 - You should see a message: `Server is running on http://localhost:3000`
 
+## Tests
 
+Test scenarios are available in test.txt, or you can test them using Postman.
+
+### Importing Postman Collection
+
+- In Postman, click on the "Import" button located at the top left.
 
 
 

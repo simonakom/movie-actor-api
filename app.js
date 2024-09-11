@@ -8,25 +8,25 @@ app.use(express.json()); //adds middleware (function) to the Express application
 
 // Data in Memory (data will be lost when the server restarts.)
 let actors = [
-    {
-        id: 1,
-        firstName: "Leo",
-        lastName: "Dicaprio",
-        dateOfBirth: "1974-11-11"
-    }
+    // {
+    //     id: 1,
+    //     firstName: "Leo",
+    //     lastName: "Dicaprio",
+    //     dateOfBirth: "1974-11-11"
+    // }
 ];
 let movies = [
-    {
-        id: 1,
-        title: "Inception",
-        creationDate: "2010-07-16",
-        actor: {
-            id: 1,
-            firstName: "Leo",
-            lastName: "Dicaprio",
-            dateOfBirth: "1974-11-11"
-        }
-    }
+    // {
+    //     id: 1,
+    //     title: "Inception",
+    //     creationDate: "2010-07-16",
+    //     actor: {
+    //         id: 1,
+    //         firstName: "Leo",
+    //         lastName: "Dicaprio",
+    //         dateOfBirth: "1974-11-11"
+    //     }
+    // }
 ];
 
 // Utility function checksif given date is in the future (birth dates in the future should not be allowed.)
@@ -44,6 +44,11 @@ const findActorById = (id) => {
 //--> Create a new actor
 app.post('/actors', (req, res) => { //start of the route handler for creating a new actor. It responds to POST requests at the /actors endpoint.
     const { firstName, lastName, dateOfBirth } = req.body; //extract the firstName, lastName, and dateOfBirth from the request body.
+
+      // Validate that firstName, lastName, and dateOfBirth are provided
+      if (!firstName || !lastName || !dateOfBirth) {
+        return res.status(400).json({ message: 'First name, last name, and date of birth are required.' });
+    }
 
     // Check if date of birth is in the future
     if (isFutureDate(dateOfBirth)) { //checks if the provided dateOfBirth is in the future using the isFutureDate utility function. 
