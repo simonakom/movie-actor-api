@@ -12,7 +12,9 @@ This application is built using Express and Node.js. It provides REST CRUD API f
 - Actor can have FirstName, LastName and DateOfBirth.
 -  Date of birth cannot be in future.
 -  Movie can have title, creationDate and a single actor associated. Actor Id has to be supplied.
-- When creating movie, if actor id is not supplied, 400 has to be returned. If Actor does not exist, 404 must be returned.
+- When creating movie:
+   - If actor id is not supplied -> 400 has to be returned.
+   - If actor does not exist -> 404 must be returned.
 - Create CRUD for Movies and Actors.
 - Test with Postman
 
