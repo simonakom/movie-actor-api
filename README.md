@@ -15,7 +15,7 @@ This application is built using Express and Node.js. It provides REST CRUD API f
 - When creating movie:
    - If actor id is not supplied -> 400 has to be returned.
    - If actor does not exist -> 404 must be returned.
-- Create CRUD for Movies and Actors.
+- Create CRUD for movies and actors.
 - Test with Postman
 
 ## Prerequisites
