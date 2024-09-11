@@ -6,7 +6,7 @@ This application is built using Express and Node.js. It provides REST CRUD API f
  
 ## Task
 
-- Create REST api with Express and JS For Movie and Actor management.
+- Create REST API with Express and JS for movies and actors management.
 - The API should store data in memory.
 - Actor can be involved in just a single movie.
 - Actor can have FirstName, LastName and DateOfBirth.
