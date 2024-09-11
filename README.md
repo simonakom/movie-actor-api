@@ -45,7 +45,7 @@ Before you begin, ensure you have the following installed on your machine:
 ## Run
 
 - Run the API server locally `node app.js` or `npm run dev` (nodemon).
-- You should see a message: `Server is running on http://localhost:3000`
+- You should see a message: `Server is running on http://localhost:3000`.
 
 ## Tests
 
