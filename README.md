@@ -6,7 +6,7 @@ This application is built using Express and Node.js. It provides REST CRUD API f
  
 ## Task
 
-- Create REST api with Express and Js For Movie and Actor management.
+- Create REST api with Express and JS For Movie and Actor management.
 - The API should store data in memory.
 - Actor can be involved in just a single movie.
 - Actor can have FirstName, LastName and DateOfBirth.
@@ -14,7 +14,7 @@ This application is built using Express and Node.js. It provides REST CRUD API f
 -  Movie can have title, creationDate and a single actor associated. Actor Id has to be supplied.
 - When creating movie, if actor id is not supplied, 400 has to be returned. If Actor does not exist, 404 must be returned.
 - Create CRUD for Movies and Actors.
-- Test with postman
+- Test with Postman
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ Before you begin, ensure you have the following installed on your machine:
 - Navigate to the project directory
 - Initialize a new Node.js project by running `npm init` in your terminal. This will create a package.json file.
 - Install Express by running `npm install express`
-- Install nodemon to automatically restarts the server whenever it detects changes source code files `npm i nodemon -D`
+- Install nodemon to automatically restart the server whenever it detects changes in code files: `npm i nodemon -D`
 - Make sure you have a `dev` script in `package.json` in order to run nodemon via `npm run dev`:
 
   ```bash
@@ -41,7 +41,7 @@ Before you begin, ensure you have the following installed on your machine:
 
 ## Run
 
-- Run the API Server locally `node app.js` or `npm run dev` (nodemon).
+- Run the API server locally `node app.js` or `npm run dev` (nodemon).
 - You should see a message: `Server is running on http://localhost:3000`
 
 
