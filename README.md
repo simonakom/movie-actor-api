@@ -30,7 +30,7 @@ Before you begin, ensure you have the following installed on your machine:
 - Initialize a new Node.js project by running `npm init` in your terminal. This will create a package.json file.
 - Install Express by running `npm install express`
 - Install nodemon to automatically restarts the server whenever it detects changes source code files `npm i nodemon -D`
-- Make sure you have a `dev` script in `package.json`:
+- Make sure you have a `dev` script in `package.json` in order to run `npm run dev`:
 
   ```bash
     "scripts": {
