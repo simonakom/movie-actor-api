@@ -29,10 +29,10 @@ Before you begin, ensure you have the following installed on your machine:
 
 - Clone this repository to your local machine
 - Navigate to the project directory
-- Initialize a new Node.js project by running `npm init` in your terminal. This will create a package.json file.
+- Initialize a new Node.js project by running `npm init` in your terminal. This will create a "package.json" file.
 - Install Express by running `npm install express`
 - Install nodemon to automatically restart the server whenever it detects changes in code files: `npm i nodemon -D`
-- Make sure you have a `dev` script in `package.json` in order to run nodemon via `npm run dev`:
+- Make sure you have a `dev` script in "package.json" in order to run nodemon via `npm run dev`:
 
   ```bash
     "scripts": {
