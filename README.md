@@ -16,19 +16,19 @@ This application is built using Express and Node.js. It provides REST CRUD API f
    - If actor id is not supplied -> 400 has to be returned.
    - If actor does not exist -> 404 must be returned.
 - Create CRUD for movies and actors.
-- Test with Postman
+- Test with Postman.
 
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your machine:
 
-- Node.js: [Download here](https://nodejs.org/)
-- npm (Node Package Manager): comes with Node.js installation
+- Node.js: [Download here](https://nodejs.org/).
+- npm (Node Package Manager): comes with Node.js installation.
 
 ## Set up
 
-- Clone this repository to your local machine
-- Navigate to the project directory
+- Clone this repository to your local machine.
+- Navigate to the project directory.
 - Initialize a new Node.js project by running `npm init` in your terminal. This will create a "package.json" file.
 - Install Express by running `npm install express`
 - Install nodemon to automatically restart the server whenever it detects changes in code files: `npm i nodemon -D`
