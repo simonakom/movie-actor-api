@@ -30,17 +30,7 @@ Before you begin, ensure you have the following installed on your machine:
 
 - Clone this repository to your local machine.
 - Navigate to the project directory.
-- Make sure you have "package.json" file. If not, run `npm init` in your terminal.
-- Install "express": `npm install express`.
-- Make sure "nodemon" is installed to automatically restart the server whenever it detects changes in code files. If not, run `npm i nodemon -D`.
-- Make sure you have a `dev` script in "package.json" in order to run nodemon via `npm run dev`:
-
-  ```bash
-    "scripts": {
-        "dev": "nodemon app.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-  ```
+- Run the following command to install all the required modules listed in the "package.json" file: `npm install`
 
 ## Run
 
