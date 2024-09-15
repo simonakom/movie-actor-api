@@ -1203,7 +1203,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"creationDate\": \"2012-05-04\",\n    \"actorId\": 1\n}",
+							"raw": "{\n    \"title\": \"The Avengers\",\n    \"creationDate\": \"2012-05-04\",\n    \"actorId\": 6\n}",
 							"options": {
 								"raw": {
 									"language": "json"
