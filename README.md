@@ -2,8 +2,8 @@
 
 ## Welcome!
 
-This application is built using Express and Node.js. It provides REST CRUD API for managing movies and actors. All data is stored in memory, meaning it will be lost when the application restarts.
-  
+This application is built using Express and Node.js. It provides REST CRUD API for managing movies and actors. All data is stored in memory, meaning it will be lost when the application restarts. Also, there are simple postman tests to test the functionality of application.
+
 ## Task
 
 - Create REST API with Express and JS for movies and actors management.
