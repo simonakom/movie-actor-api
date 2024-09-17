@@ -96,14 +96,22 @@ app.put('/actors/:id', (req, res) => { //Route handles PUT requests at /actors/:
 
 //--> Delete an actor by ID
 app.delete('/actors/:id', (req, res) => { //Route handles DELETE requests at /actors/:id to delete an actor by their ID.
-    const actorIndex = actors.findIndex(actor => actor.id === parseInt(req.params.id)); //Looks for the actor's index in the actors array.
+    const actorId = parseInt(req.params.id); //This extracts the id from the request URL (req.params.id) and converts it to an integer using parseInt().
 
-    if (actorIndex === -1) { //If actor isn't found - returns a 404 Not Found response.
-        return res.status(404).json({ message: 'Actor not found' }); 
+    // Check if the actor is assigned to any movie
+    const actorInMovie = movies.some(movie => movie.actor.id === actorId); //Checks if the actor is assigned to any movie. The movies.some() method iterates over the movies array and returns true if at least one movie contains the actor with the matching id.
+
+    if (actorInMovie) { //This condition checks whether the actor is assigned to any movie
+        return res.status(400).json({ message: 'Cannot delete actor because they are assigned to a movie.' }); // Return 400 Bad Request
     }
 
-    actors.splice(actorIndex, 1); //If found -  actor is removed from the array using splice().
-    
+    const actorIndex = actors.findIndex(actor => actor.id === actorId); //If the actor isn't assigned to any movie, this line finds the index of the actor in the actors array. It uses the findIndex() method to search for the actor whose id matches the actorId extracted from the URL. If the actor is found, actorIndex will store their position in the array. If no match is found, actorIndex will be -1.
+
+    if (actorIndex === -1) { //This condition checks if the actor was found in the actors array (if findIndex() returned -1, the actor was not found).
+        return res.status(404).json({ message: 'Actor not found' });
+    }
+
+    actors.splice(actorIndex, 1); //Removes the actor from the actors array if they were found and not assigned to any movie. The splice() method removes the element at the index actorIndex from the array, and 1 specifies that only one item (the actor) should be removed.    
     res.status(204).send(); //204 No Content response is sent (indicating successful deletion with no content to return).
 });
 
