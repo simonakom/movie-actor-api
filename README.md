@@ -1,4 +1,4 @@
-# CRUD API for movies and actors!
+# CRUD API for movies and actors
 
 ## Welcome!
 
