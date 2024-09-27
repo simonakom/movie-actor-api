@@ -22,9 +22,9 @@ This application is built using Express and Node.js. It provides REST CRUD API f
 
 Before you begin, ensure you have the following installed on your machine:
 
-- Node.js: [Download here](https://nodejs.org/).
+- Node.js.
 - npm (Node Package Manager): comes with Node.js installation.
-- Postman: [Download here](https://www.postman.com/downloads/).
+- Postman.
 
 ## Set up
 
